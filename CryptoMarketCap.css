@@ -1,0 +1,16 @@
+
+.navbar{
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+hr{
+  margin:0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}

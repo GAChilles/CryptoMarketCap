@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Icons -->
+
+    <link rel="stylesheet" href="CryptoMarketCap.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="CryptoMarketCap.js"></script>
+
+
+
+    <title>Crypto Market Cap</title>
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <img width="40" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.icon-icons.com%2Ficons2%2F1384%2FPNG%2F512%2Fgeneric-crypto-cryptocurrency-cryptocurrencies-cash-money-bank-payment_95038.png&f=1&nofb=1" alt="Crypto Icon">
+        <a class="navbar-brand" href="">CryptoMarketCap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cryptocurrencies
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Exchanges
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Watchlist</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Learn
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Buy Bitcoin</a>
+            </li>
+            <form class="d-flex" id="nav-bar-search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+            <li>
+              <button style="color:black" type="button" class="btn btn-link">
+                <i class="fa fa-comment"></i>
+              </button>
+            </li>
+            <li>
+              <button style="color:black" type="button" class="btn btn-link">
+                <i class="fa fa-bell"></i>
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-light">Login</button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-primary">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <hr>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-1"id="num-column">
+          <ul id="num-list">
+            <li></li>
+          </ul>
+        </div>
+        <div class="col-2"id="name-column">
+          <ul id="name-list">
+            <li></li>
+          </ul>
+        </div>
+        <div class="col-1"id="price-column">
+          <ul id="price-list">
+            <li></li>
+          </ul>
+        </div>
+        <div class="col-1"id="24h-column">
+          <ul id="24h-list">
+            <li></li>
+          </ul>
+        </div>
+        <div class="col-1"id="7d-column">
+          <ul id="7d-list">
+            <li></li>
+          </ul>
+        </div>
+        <div class="col-1"id="marketcap-column">
+          <ul id="marketcap-list">
+            <li></li>
+          </ul>
+        </div>
+        <div class="col-1"id="volume-column">
+          <ul id="volume-list">
+            <li></li>
+          </ul>
+        </div>
+        <div class="col-2"id="circulating-sup-column">
+          <ul id="circulating-sup-list">
+            <li></li>
+          </ul>
+        </div>
+        <div class="col-2"id="last7d-column">
+          <ul id="last7d-list">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </body>
+</html>
