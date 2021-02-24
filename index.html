@@ -10,6 +10,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"><!-- Jquery sparkline-->
+
     <script type="text/javascript" src="CryptoMarketCap.js"></script>
 
 
@@ -107,62 +109,79 @@
     </nav>
     <hr>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-1"id="num-column">
-          <ul id="num-list">
+
+    <div class="container" id="price-table">
+      <div class="row" >
+        <hr>
+        <div class="col-1" id="rank-header" >
+          <h4>Rank</h4>
+        </div>
+        <div class="col-2" id="name-header">
+          <h4>Name</h4>
+        </div>
+        <div class="col-1" id="price-header">
+          <h4>Price</h4>
+        </div>
+        <div class="col-1" id="h24-header">
+          <h4>24H</h4>
+        </div>
+        <div class="col-1" id="d7-header">
+          <h4>7d</h4>
+        </div>
+        <div class="col-2" id="marketcap-header">
+          <h4>Market Cap</h4>
+        </div>
+        <div class="col-2" id="volume-header">
+          <h4>Volume</h4>
+        </div>
+        <div class="col-2" id="circulating-sup-header">
+          <h4>Circulating Supply</h4>
+        </div>
+        <hr>
+      </div>
+      <div class="row row-cols-auto">
+        <div class="table-columns col-1" id="rank-column">
+          <ul class="list-group"id="rank-list">
             <li></li>
           </ul>
         </div>
-        <div class="col-2"id="name-column">
-          <ul id="name-list">
-            <li></li>
+        <div class="table-columns col-2" id="name-column">
+          <ul>
+            <li id="name-list"></li>
           </ul>
         </div>
-        <div class="col-1"id="price-column">
+        <div class="table-columns col-1" id="price-column">
           <ul id="price-list">
             <li></li>
           </ul>
         </div>
-        <div class="col-1"id="24h-column">
-          <ul id="24h-list">
+        <div class="table-columns col-1" id="h24-column">
+          <ul id="h24-list">
             <li></li>
           </ul>
         </div>
-        <div class="col-1"id="7d-column">
-          <ul id="7d-list">
+        <div class="table-columns col-1" id="d7-column">
+          <ul id="d7-list">
             <li></li>
           </ul>
         </div>
-        <div class="col-1"id="marketcap-column">
+        <div class="table-columns col-2" id="marketcap-column">
           <ul id="marketcap-list">
             <li></li>
           </ul>
         </div>
-        <div class="col-1"id="volume-column">
+        <div class="table-columns col-2" id="volume-column">
           <ul id="volume-list">
             <li></li>
           </ul>
         </div>
-        <div class="col-2"id="circulating-sup-column">
+        <div class="table-columns col-2" id="circulating-sup-column">
           <ul id="circulating-sup-list">
-            <li></li>
-          </ul>
-        </div>
-        <div class="col-2"id="last7d-column">
-          <ul id="last7d-list">
             <li></li>
           </ul>
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
 
   </body>
 </html>
